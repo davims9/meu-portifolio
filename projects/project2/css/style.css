@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8fafa;
+}
+
+.top-bar {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+.menu a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+}
+
+.central-banner {
+    background: url("../images/fotomontanha.jpg") no-repeat center/cover;
+    height: 350px;
+    text-align: center;
+    padding-top: 120px;
+    color: #333;
+}
+
+.central-banner h1 {
+    font-size: 28px;
+    font-weight: lighter;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.features {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.feature-box {
+    width: 280px;
+}
+
+.feature-box img {
+    width: 60px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.featured-content {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.video-box {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    aspect-ratio: 16 / 9;
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.secondary {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 350px;
+    background: #F3F3F3;
+    padding: 15px;
+    border: 1px solid #b8b8b8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-text {
+    flex: 1;
+    text-align: center;
+}
+
+.card-img {
+    width: 45%;
+    border-radius: 5px;
+}
+
+.btn-secundary {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 15px;
+    border: 1px solid #9DC4BF;
+    border-radius: 7px;
+    color: #9DC4BF;
+    text-decoration: none;
+}
+
+.cta {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #e8eeee;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 17px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        margin-left: 12px;
+    }
+
+    .central-banner h1 {
+        font-size: 26px;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-box {
+        width: 90%;
+    }
+
+    .video-box {
+        width: 100%;
+        max-width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    /* CORREÇÃO DEFINITIVA DO SECONDARY */
+    .secondary {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 360px;
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .card-text {
+        width: 100%;
+    }
+
+    .card-img {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .btn, .btn-secundary {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+}
+
+
+/* CELULARES PEQUENOS */
+@media (max-width: 480px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .central-banner h1 {
+        font-size: 22px;
+    }
+
+    .card-img {
+        width: 90%;
+    }
+}

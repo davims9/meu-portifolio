@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questão 1</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        
+        <main class="content-container">
+            <h1 class="page-title">Consultar CEP</h1>
+            
+            <form id="search-form" class="search-form">
+                <input type="text" id="zip-code-input" class="zip-input"required>
+                <button type="submit" id="search-button" class="submit-button">Consultar</button>
+            </form>
+
+            <p id="error-message" class="error-feedback hidden"></p>
+
+            <section id="results-area" class="results-area hidden">
+                <div class="data-grid">
+                    <p><strong>Endereço:</strong> <span id="address-street"></span></p>
+                    <p><strong>Bairro:</strong> <span id="address-neighborhood"></span></p>
+                    <p><strong>Cidade:</strong> <span id="address-city"></span></p>
+                    <p><strong>Estado:</strong> <span id="address-state"></span></p>
+                    <p><strong>Latitude:</strong> <span id="address-latitude"></span></p>
+                    <p><strong>Longitude:</strong> <span id="address-longitude"></span></p>
+                </div>
+                
+                <button id="show-map-button" class="map-trigger">Exibir mapa</button>
+                
+                <div id="map-container" class="map-container hidden">
+                    <iframe id="map-iframe" class="map-display" width="100%" height="400" frameborder="0"></iframe>
+                </div>
+            </section>
+        </main>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

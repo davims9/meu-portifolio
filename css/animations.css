@@ -1,0 +1,28 @@
+/* =========================================================
+   ANIMATIONS CSS — Transition States (Cleaned for WAAPI)
+   ========================================================= */
+
+/* Nota: A maioria das animações de entrada agora é gerida programaticamente via WAAPI no src/animations.ts */
+
+.reveal {
+  /* Estado inicial mantido para evitar layout shift antes da animação TS */
+  opacity: 0;
+  will-change: opacity, transform;
+}
+
+/* Transições simples de hover mantidas no CSS por performance */
+.nav-link, .btn, .service-card, .portfolio-card {
+  transition: 
+    background-color var(--transition-base),
+    color var(--transition-base),
+    transform var(--transition-base),
+    border-color var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
